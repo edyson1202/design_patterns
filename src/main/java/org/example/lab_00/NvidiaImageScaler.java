@@ -1,6 +1,6 @@
-package org.example;
+package org.example.lab_00;
 
-import org.example.Interfaces.ImageScaler;
+import org.example.lab_00.Interfaces.ImageScaler;
 
 public class NvidiaImageScaler implements ImageScaler {
     @Override

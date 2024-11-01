@@ -1,8 +1,8 @@
-package org.example;
+package org.example.lab_00;
 
-import org.example.Interfaces.ICargoCarrier;
-import org.example.Interfaces.IFlyable;
-import org.example.Interfaces.IOrbiter;
+import org.example.lab_00.Interfaces.ICargoCarrier;
+import org.example.lab_00.Interfaces.IFlyable;
+import org.example.lab_00.Interfaces.IOrbiter;
 
 public class SpaceShuttle implements IFlyable, IOrbiter, ICargoCarrier {
     @Override
