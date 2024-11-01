@@ -1,17 +1,17 @@
 ## Software Design Laboratory Works
 
-#### Lab 00 - implement two SOLID principles
+### Lab 00 - implement two SOLID principles
 
-#### Lab 01 - implement 3 creational design patters
+### Lab 01 - implement 3 creational design patters
 
-###### Overview
+#### Overview
 This laboratory work focuses on implementing 3 creational design patterns
 
 - AbstractFactory
 - Builder
 - Singleton
 
-###### AbstractFactory
+#### AbstractFactory
 
 `IAbstractGraphicsPipelineFactory` is an Graphics Pipeline Interface that creates several related components used in graphics rendering
 
@@ -27,7 +27,7 @@ The concrete implementations are
 
 `IAbstractGraphicsPipelineFactory` has two implementations: `PathTracingPipelineFactory` and `RasterizationPipelineFactory`
 
-###### Builder
+#### Builder
 `SatellineBuilder` is a class that is responsible for the complex construction process of complex satellite objects
 
 A satellite has several characteristics:
@@ -37,6 +37,6 @@ A satellite has several characteristics:
 
 By using a `SatelliteBuilder` one can construct various types of satellites equipped with different types of equipment easily.
 
-###### Singleton
+#### Singleton
 A `VulkanDevice` is a class that should be instantiated only once,
 by using a singleton the `VulkanDevice` instance can be accessed globally and more than one instantiation is prevented.

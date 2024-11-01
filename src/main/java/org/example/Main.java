@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.lab_01.AbstractFactory.*;
 import org.example.lab_01.Builder.*;
+import org.example.lab_01.Singleton.VulkanDevice;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,15 +25,20 @@ public class Main {
 //        spaceShuttle.takeOff();
 //        spaceShuttle.progradeBurn();
 
+        // abstract factory
         IAbstractGraphicsPipelineFactory pipelineFactory = new PathTracingPipelineFactory();
         IScene scene = pipelineFactory.getScene();
         IShadingStage shadingStage = pipelineFactory.getShadingStage();
         IRenderer renderer = pipelineFactory.getRenderer();
 
+        // builder
         Satellite nasaSatellite = new SatelliteBuilder()
                 .gps(GPSType.STATE_OF_THE_ART)
                 .orientationSystem(OrientationSystemType.ELECTROMAGNETIC)
                 .powerSource(PowerSourceType.DOUBLE_SOLAR_PANEL)
                 .build();
+
+        // singleton
+        VulkanDevice device = VulkanDevice.getInstance();
     }
 }
